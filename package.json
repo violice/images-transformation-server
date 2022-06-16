@@ -1,0 +1,37 @@
+{
+  "name": "images-transformation-server",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "ts-node-dev ./src/index.ts",
+    "build": "tsc --build",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\""
+  },
+  "engines": {
+    "node": ">=16.15.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "multer": "^1.4.5-lts.1",
+    "nanoid": "^3.3.4",
+    "nanoid-dictionary": "^4.3.0",
+    "sharp": "^0.29.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "@types/express": "^4.17.13",
+    "@types/multer": "^1.4.7",
+    "@types/nanoid-dictionary": "^4.2.0",
+    "@types/node": "^17.0.44",
+    "@types/sharp": "^0.30.4",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.7.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.3"
+  }
+}
